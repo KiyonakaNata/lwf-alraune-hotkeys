@@ -17,7 +17,7 @@ Give orders to Farming Alraune with hotkeys in Lazy Witch's Factory
 3. LwfAlrauneHotkeys.dll を BepInEx/plugins/ に入れる
 
 4. ゲームを起動する。農耕アルラウネにカーソルを載せて G を押すと
-   ホバー表示が「交配 - 植物」などになる
+   カーソルを載せたときの情報パネルに「交配 - 植物」などが出る
 
 MOD管理ソフトを使うなら Thunderstore から
 
@@ -67,7 +67,7 @@ Install
 3. Put LwfAlrauneHotkeys.dll into BepInEx/plugins/
 
 4. Start the game. Hover over a Farming Alraune and press G.
-   The hover info shows Crossbreeding - Plants or similar
+   The info panel under the cursor shows Crossbreeding - Plants or similar
 
 With a mod manager, install from Thunderstore
 

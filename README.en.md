@@ -38,7 +38,7 @@ Hover over a placed Farming Alraune and press a key
 
 2. Run the game once and quit, so that `BepInEx/plugins` is created
 3. Put `LwfAlrauneHotkeys.dll` from this mod's zip into **`BepInEx/plugins/`**
-4. Start the game, hover over a Farming Alraune and press `G`. The hover info shows Crossbreeding - Plants or similar
+4. Start the game, hover over a Farming Alraune and press `G`. The info panel under the cursor shows Crossbreeding - Plants or similar
 
 ## Uninstall
 
