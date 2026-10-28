@@ -26,6 +26,7 @@ Hover over a placed Farming Alraune and press a key
 
 - Hold the key and move the cursor → every Farming Alraune you pass gets the same order
 - Keys do nothing over the inventory or a window
+- Keys can be changed ([Settings](#settings))
 
 ---
 

@@ -9,6 +9,7 @@
 - `J` → 採掘
 - キーを押したままカーソルを動かす → 通った農耕アルラウネ全部に同じ命令
 - 所持品欄やウィンドウの上ではキーが効かない
+- キーは変更できる
 
 ![キーで命令](https://raw.githubusercontent.com/KiyonakaNata/lwf-alraune-hotkeys/main/img/hotkeys.webp)
 
