@@ -14,6 +14,8 @@ Give orders to Farming Alraune with hotkeys in **Lazy Witch's Factory**
 
 ### Orders by key
 
+![Orders by key](img/hotkeys.webp)
+
 Hover over a placed Farming Alraune and press a key
 
 | Key | Order |

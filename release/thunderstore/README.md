@@ -10,6 +10,8 @@ Give orders to Farming Alraune with hotkeys in **Lazy Witch's Factory**.
 - Hold the key and move the cursor → every Farming Alraune you pass gets the same order
 - Keys do nothing over the inventory or a window
 
+![Orders by key](https://raw.githubusercontent.com/KiyonakaNata/lwf-alraune-hotkeys/main/img/hotkeys.webp)
+
 ## Settings
 
 - Change keys in the mod manager's Config editor (`kiyonakanata.lwfalraunehotkeys.cfg`)

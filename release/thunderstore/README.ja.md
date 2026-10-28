@@ -10,6 +10,8 @@
 - キーを押したままカーソルを動かす → 通った農耕アルラウネ全部に同じ命令
 - 所持品欄やウィンドウの上ではキーが効かない
 
+![キーで命令](https://raw.githubusercontent.com/KiyonakaNata/lwf-alraune-hotkeys/main/img/hotkeys.webp)
+
 ## 設定
 
 - キーは MOD 管理ソフトの Config editor で変える（`kiyonakanata.lwfalraunehotkeys.cfg`）
