@@ -1,0 +1,9 @@
+{
+  "name": "LwfAlrauneHotkeys",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/KiyonakaNata/lwf-alraune-hotkeys",
+  "description": "Give orders to Farming Alraune with hotkeys. Hover and press G (Crossbreeding), H (Cash) or J (Mining). Hold the key and sweep to order every Farming Alraune you pass.",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2305"
+  ]
+}
