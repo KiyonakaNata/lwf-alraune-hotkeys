@@ -32,6 +32,7 @@ MOD管理ソフトを使うなら Thunderstore から
   H → 現金
   J → 採掘
 キーを押したままなぞる → 通った農耕アルラウネ全部に同じ命令
+キーを押したまま置く → 置いた農耕アルラウネが最初からその命令になる
 
 キーを変えるなら BepInEx/config/kiyonakanata.lwfalraunehotkeys.cfg
 
@@ -80,6 +81,7 @@ Hover over a Farming Alraune and press
   H → Cash
   J → Mining
 Hold the key and sweep → the same order for every Farming Alraune passed
+Hold the key while placing → the new Farming Alraune starts with that order
 
 Change keys in BepInEx/config/kiyonakanata.lwfalraunehotkeys.cfg
 

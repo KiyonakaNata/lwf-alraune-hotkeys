@@ -52,7 +52,7 @@ namespace LwfAlrauneHotkeys
     {
         internal const string PluginGuid = "kiyonakanata.lwfalraunehotkeys";
         internal const string PluginName = "LWF Alraune Hotkeys";
-        internal const string PluginVersion = "1.0.0";
+        internal const string PluginVersion = "1.0.1";
 
         private enum Command { None, Crossbreed, Cash, Mine }
 
@@ -166,21 +166,23 @@ namespace LwfAlrauneHotkeys
         }
 
         // 命令 → そのアルラウネが向いている採掘ポイントに合うレシピ。
-        // 採掘は MineX、交配は MineX の Mine を Clone に替えた ID、現金は HarvestableSale
+        // 採掘は MineX、交配は MineX の Mine を Clone に替えた ID、現金は HarvestableSale（種類を問わない）
         private static Recipe ResolveRecipe(FarmerObject farmer, Command cmd)
         {
             HarvestableObject target;
             if (!farmer.TryGetWorkingHarvestable(out target) || target == null) { return null; }
-            string mining = FarmerCultivationRecipes.GetMiningRecipeID(target.GetHarvestableType());
-            if (string.IsNullOrEmpty(mining)) { return null; }
-
             string id;
-            switch (cmd)
+            if (cmd == Command.Cash)
             {
-                case Command.Mine: id = mining; break;
-                case Command.Crossbreed: id = "Clone" + mining.Substring("Mine".Length); break;
-                case Command.Cash: id = FarmerCultivationRecipes.HarvestableSaleRecipeID; break;
-                default: return null;
+                // 現金は相手の種類を問わない（定義が Any）。開封済みの金庫（SafeOpened）のように
+                // 採掘レシピが無い相手にも通る。採掘 ID を先に要求すると、ここで止まってしまう（1.0.1 で修正）
+                id = FarmerCultivationRecipes.HarvestableSaleRecipeID;
+            }
+            else
+            {
+                string mining = FarmerCultivationRecipes.GetMiningRecipeID(target.GetHarvestableType());
+                if (string.IsNullOrEmpty(mining)) { return null; }
+                id = (cmd == Command.Mine) ? mining : "Clone" + mining.Substring("Mine".Length);
             }
 
             Recipe recipe;

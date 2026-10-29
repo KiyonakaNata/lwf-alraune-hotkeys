@@ -25,6 +25,7 @@ Hover over a placed Farming Alraune and press a key
 | `J` | Mining |
 
 - Hold the key and move the cursor → every Farming Alraune you pass gets the same order
+- Hold the key while placing → the new Farming Alraune starts with that order
 - Keys do nothing over the inventory or a window
 - Keys can be changed ([Settings](#settings))
 
